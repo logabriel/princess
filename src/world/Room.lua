@@ -244,7 +244,7 @@ function Room:generateObjects()
             -- change to spawn a pot
             if math.random(20) == 1 then
                 table.insert(self.objects, GameObject(
-                    GAME_OBJECT_DEFS['pot'], x*16, y*16
+                    GAME_OBJECT_DEFS['pot'], x * TILE_SIZE, y * TILE_SIZE
                 ))
             end
         end
