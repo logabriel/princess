@@ -75,13 +75,32 @@ GAME_OBJECT_DEFS = {
         height = 16,
         solid = true,
         consumable = false,
-        defaultState = 'closed',
+        defaultState = 'closed-down',
+        openable = true,
         states = {
-            ['closed'] = {
-                frame = 2
+            ['closed-down'] = {
+                frame = 2,
             },
-            ['open'] = {
-                frame = 1
+            ['open-down'] = {
+                frame = 1,
+            },
+            ['closed-up'] = {
+                frame = 8,
+            },
+            ['open-up'] = {
+                frame = 7,
+            },
+            ['closed-left'] = {
+                frame = 4,
+            },
+            ['open-left'] = {
+                frame = 3,
+            },
+            ['closed-right'] = {
+                frame = 6,
+            },
+            ['open-right'] = {
+                frame = 5,
             },
         },
     },
