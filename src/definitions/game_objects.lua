@@ -129,9 +129,9 @@ GAME_OBJECT_DEFS = {
         width = 16,
         height = 16,
         solid = false,
-        consumable = true,
+        consumable = false,
         defaultState = 'arrow-left',
-        takeable = true,
+        takeable = false,
         states = {
             ['arrow-left'] = {
                 frame = 1
@@ -147,5 +147,4 @@ GAME_OBJECT_DEFS = {
             }
         }
     }
-
 }

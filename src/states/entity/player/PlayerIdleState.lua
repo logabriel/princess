@@ -122,5 +122,9 @@ function PlayerIdleState:update(dt)
                 pot = takenPot
             })
         end
+    elseif love.keyboard.wasPressed('f') then
+        if self.entity.bow ~= false and self.entity.arrowLive ~= true then
+            self.entity.fire(self, self.dungeon)
+        end
     end
 end
